@@ -5,6 +5,7 @@
     --dash-color: #be185d;
     --white-shade: #eef2ff;
     --green-color: #18BE79;
+    box-sizing: border-box;
 }
 
 .container {
@@ -150,4 +151,39 @@ button > svg {
     font-size: 24px;
     color: var(--white-shade);
     font-weight: bold;
+}
+
+.bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-left img {
+    height: 70px;
+    width: 70px;
+    margin-left: 110px;
+}
+
+.bottom-left span {
+    color: var(--white-shade);
+    font-weight: 500;
+}
+
+.morgan {
+    font-size: 30px;
+}
+
+.bottom-right {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-right button {
+    background-color: var(--dash-color);
+    color: var(--white-shade);
+    height: 40px;
+    width: 85px;
+    border: 0;
+    border-radius: 20px; 
 }
