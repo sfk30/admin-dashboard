@@ -81,7 +81,7 @@ li > svg {
     background-color: var(--green-color);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 20px 30px 10px;
 }
 
@@ -177,6 +177,7 @@ button > svg {
 .bottom-right {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .bottom-right button {
@@ -186,4 +187,10 @@ button > svg {
     width: 85px;
     border: 0;
     border-radius: 20px; 
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.bottom-right button:hover {
+    background-color: #831843;
 }
