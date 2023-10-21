@@ -70,23 +70,71 @@
 // console.log(diagonalDifference([[11,2,4],[4,5,6],[10,8,-12]]))
 
 
-function plusMinus(arr) {
-    const n = arr.length
-    let posNumbers = 0
-    let negNumbers = 0
-    let zerNumbers = 0
-    for (let i = 0; i < n; i ++) {
-        if (arr[i] > 0) {
-            posNumbers += 1
-        }   else if (arr[i] < 0) {
-            negNumbers += 1
-        }   else {
-            zerNumbers +=1
-        }
-    }
-    console.log((posNumbers/n).toFixed(6))
-    console.log((negNumbers/n).toFixed(6))
-    console.log((zerNumbers/n).toFixed(6))
-}
+// function plusMinus(arr) {
+//     const n = arr.length
+//     let posNumbers = 0
+//     let negNumbers = 0
+//     let zerNumbers = 0
+//     for (let i = 0; i < n; i ++) {
+//         if (arr[i] > 0) {
+//             posNumbers += 1
+//         }   else if (arr[i] < 0) {
+//             negNumbers += 1
+//         }   else {
+//             zerNumbers +=1
+//         }
+//     }
+//     console.log((posNumbers/n).toFixed(6))
+//     console.log((negNumbers/n).toFixed(6))
+//     console.log((zerNumbers/n).toFixed(6))
+// }
 
-console.log(plusMinus([-4, 3, -9, 0, 4, 1]))
+// console.log(plusMinus([-4, 3, -9, 0, 4, 1]))
+
+// function validAnagram(str1, str2){
+//     if (str1.length !== str2.length) {
+//         return false
+//     }
+
+//     var freq1 = {}
+//     var freq2 = {}
+//     for (let letter of str1) {
+//         freq1[letter] = (freq1[letter] || 0) + 1
+//     }
+//     for (let letter of str2) {
+//         freq2[letter] = (freq2[letter] || 0) + 1
+//     }
+//     for (let key in freq1) {
+//         if (!(key in freq2)) {
+//             return false
+//         }
+//         if (freq1[key] !== freq2[key]) {
+//         return false
+//        }
+//     }
+//     return true
+//   }
+
+// console.log(validAnagram('aaz', 'zaa'))
+
+
+// numbers = [10, -1, -11, 3, 6]
+
+// console.log(numbers.sort((a,b) => a > b ? 1 : -1))
+
+function countUniqueValues(arr){
+    if (arr.length === 0) {
+        return 0
+    }
+    var freq = {}
+    for (var num of arr) {
+        freq[num] = (freq[num] || 0) + 1
+    }
+    var count = 0
+    for (var key in freq) {
+        count += 1
+    }
+    return count 
+  }
+
+console.log(countUniqueValues([1,2,2,3,1,4,5]))

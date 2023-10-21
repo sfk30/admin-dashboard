@@ -194,3 +194,21 @@ button > svg {
 .bottom-right button:hover {
     background-color: #831843;
 }
+
+.main { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #94a3b8;
+    padding: 20px 15px 40px;
+}
+
+.big-words { 
+    color: var(--white-shade);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+}
