@@ -200,7 +200,7 @@ button > svg {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr;
     background-color: #94a3b8;
-    padding: 20px 15px 40px;
+    padding: 20px 15px 30px;
 }
 
 .big-words { 
@@ -215,5 +215,39 @@ button > svg {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.card { 
+    background-color: var(--white-shade);
+    width: 220px;
+    height: 180px;
+    border-radius: 10px;
+    border-left: 8px solid var(--dash-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.first-line {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.three-icons {
+    align-self: flex-end;
+    margin-top: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.three-icons svg {
+    height: 20px;
+    width: 30px;
+    fill: black;
 }
