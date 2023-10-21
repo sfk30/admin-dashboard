@@ -88,7 +88,7 @@ li > svg {
 .top-left {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 button > svg {
@@ -156,13 +156,13 @@ button > svg {
 .bottom-left {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 20px;
 }
 
 .bottom-left img {
     height: 70px;
     width: 70px;
-    margin-left: 110px;
 }
 
 .bottom-left span {
@@ -211,4 +211,9 @@ button > svg {
 
 .announcements {
     grid-column: 2 / 3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
