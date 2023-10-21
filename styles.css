@@ -5,6 +5,7 @@
     --dash-color: #be185d;
     --white-shade: #eef2ff;
     --green-color: #18BE79;
+    --grey-color: #a1a1aa;
     box-sizing: border-box;
 }
 
@@ -78,7 +79,7 @@ li > svg {
 }
 
 .header {
-    background-color: var(--green-color);
+    background-color: var(--white-shade); /**/
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -92,7 +93,7 @@ li > svg {
 }
 
 button > svg {
-    fill: var(--white-shade);
+    fill: black; /**/
     /* height: 20px; */
     width: 25px;
 }
@@ -105,6 +106,7 @@ button > svg {
     align-items: center;
     border-radius: 20px;
     padding: 10px 20px;
+    border: 2px solid black;
 }
 
 .search-bar input {
@@ -113,11 +115,11 @@ button > svg {
     border: 0;
     font-size: 16px;
     outline: none;
-    color: var(--white-shade);
+    color: black; /**/
 }
 
 ::placeholder { 
-    color: var(--white-shade);
+    color: black; /**/
 }
 
 .search-bar button {
@@ -137,7 +139,7 @@ button > svg {
 }
 
 .top-right > svg {
-    fill: var(--white-shade);
+    fill: black; /**/
     height: 25px;
     width: 25px;
 }
@@ -149,7 +151,7 @@ button > svg {
 
 .top-right span {
     font-size: 24px;
-    color: var(--white-shade);
+    color: black; /**/
     font-weight: bold;
 }
 
@@ -166,11 +168,11 @@ button > svg {
 }
 
 .bottom-left span {
-    color: var(--white-shade);
+    color: black; /**/
     font-weight: 500;
 }
 
-.morgan {
+.robin {
     font-size: 30px;
 }
 
@@ -182,7 +184,7 @@ button > svg {
 
 .bottom-right button {
     background-color: var(--dash-color);
-    color: var(--white-shade);
+    color: var(--white-shade); /**/
     height: 40px;
     width: 85px;
     border: 0;
@@ -197,14 +199,13 @@ button > svg {
 
 .main { 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: auto 1fr;
-    background-color: #94a3b8;
+    background-color: var(--grey-color);
     padding: 20px 15px 30px;
 }
 
 .big-words { 
-    color: var(--white-shade);
     font-size: 20px;
     font-weight: 500;
 }
@@ -250,4 +251,63 @@ button > svg {
     height: 20px;
     width: 30px;
     fill: black;
+}
+
+.main-right { 
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 10px;
+}
+
+.right-card { 
+    background-color: var(--white-shade);
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    border-left: 8px solid var(--dash-color);
+    margin-top: 10px;
+}
+
+.site-info{ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.top-words { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+hr { 
+    border: 1px solid var(--dash-color);
+}
+
+.bottom-info { 
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-row: repeat (2, 1fr);
+    gap: 10px;
+}
+
+.bottom-info img {
+    height: 70px;
+    width: 70px;
+}
+
+.red-info, .wizard-info {
+    margin: auto;
+    font-weight: 500;
+}
+
+.ital {
+    font-style: italic;
+    font-weight: normal;
+    color: #404040;
 }
